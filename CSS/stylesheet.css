@@ -15,8 +15,6 @@ body{
 }
 
 .paratext{
-    grid-column: 2;
-    grid-row: 6;
     z-index: 100000;
 }
 /* :3 ~Text Styles~ :3 */
