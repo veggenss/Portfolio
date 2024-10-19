@@ -13,6 +13,11 @@ body{
     grid-template-rows: 100px;
     background-color: black;
 }
+
+.paratext{
+    grid-column: 2;
+    grid-row: 5;
+}
 /* :3 ~Text Styles~ :3 */
 
 
