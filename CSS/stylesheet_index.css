@@ -1,0 +1,69 @@
+/* :3 ~Main~ :3 */
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: monospace;
+    overflow-x: hidden;
+}
+
+#background-image {
+    top: 0;
+    left: 17em;
+    position: absolute;
+}
+
+.paratext {
+    z-index: 100000;
+}
+
+/* :3 ~Topbar~ :3 */
+
+.topbar {
+    height: 6%;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 0, 200);
+}
+
+.topbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: large;
+    text-align: center;
+}
+
+/* :3 ~Navigation~ :3 */
+
+.sidenav {
+    top: 6%;
+    height: auto;
+    width: 230px;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 53, 130);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav-buttons {
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.sidenav-buttons a {
+    color: white; 
+    padding: 15px;
+    display: block; 
+    text-align: center; 
+    text-decoration: none; 
+}
+
+.sidenav-buttons a:hover {
+    opacity: 0.6; 
+}
