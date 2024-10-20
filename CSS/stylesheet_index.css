@@ -12,10 +12,6 @@ body {
     position: absolute;
 }
 
-.paratext {
-    z-index: 100000;
-}
-
 /* :3 ~Topbar~ :3 */
 
 .topbar {
@@ -66,4 +62,10 @@ body {
 
 .sidenav-buttons a:hover {
     opacity: 0.6; 
+}
+
+/* :3 ~Other~ :3 */
+
+.links {
+    
 }
