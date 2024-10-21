@@ -10,11 +10,15 @@ body {
     top: 0;
     left: 17em;
     position: absolute;
+    width: calc(100vw - 17em);
+    height: auto;
 }
 
-.paratext {
-    z-index: 100000;
+#background-image img {
+    width: 100%;
+    height: auto;
 }
+
 
 /* :3 ~Topbar~ :3 */
 
@@ -26,13 +30,15 @@ body {
     top: 0;
     left: 0;
     background-color: rgb(255, 0, 200);
+    text-align: center;
 }
 
 .topbar a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: large;
-    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
 }
 
 /* :3 ~Navigation~ :3 */
@@ -66,4 +72,10 @@ body {
 
 .sidenav-buttons a:hover {
     opacity: 0.6; 
+}
+
+/* :3 ~Other~ :3 */
+
+.links {
+    
 }
