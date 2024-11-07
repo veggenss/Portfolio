@@ -1,0 +1,209 @@
+/* :3 ~Main~ :3 */
+
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: monospace;
+    overflow-x: hidden;
+    scrollbar-width: 0;
+    width: 100%;
+    margin: 0;
+    height: auto;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    animation: fadeinsite 1.5s forwards;
+}
+
+@keyframes fadeinsite {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#background-image {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100vw;
+    height: auto;
+}
+
+#background-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* :3 ~Topbar~ :3 */
+
+.topbar {
+    height: 4vw;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 53, 130);
+    text-align: center;
+}
+
+.topbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: large;
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center; 
+    line-height: 4vw;
+}
+
+#nav-button {
+    top: 0.8vw;
+    left: 1vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    position: fixed;
+    z-index: 4;
+    transition: transform 0.2s ease-out;
+}
+
+#set-button {
+    top: 0.5vw;
+    left: 4vw;
+    width: 3vw;
+    height: 3vw;
+    position: fixed;
+    z-index: 4;
+    transition: transform 0.2s ease-out;
+}
+
+.rotate {
+    transform: rotate(90deg);
+}
+
+/* :3 ~Menu~ :3 */
+
+#sidenav{
+    top: -100%;
+    height: auto;
+    width: 18em;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    left: 0; 
+    animation: slidein 0.5s ease-out forwards;
+    background: linear-gradient(to bottom, rgb(255, 53, 130) 30%, rgb(255, 105, 180) 60%, rgb(255, 197, 226) 100%);
+}
+
+#sideset{
+    top: -100%;
+    height: auto;
+    width: 18em;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    left: 0; 
+    animation: slidein 0.5s ease-out forwards;
+    background: linear-gradient(to bottom, rgb(255, 53, 130) 30%, rgb(255, 105, 180) 60%, rgb(255, 197, 226) 100%);
+}
+
+@keyframes slidein {
+    0% {
+      top: -100%; 
+      transform: translateY(-100%); 
+    }
+  
+    100% {
+      top: 4vw; 
+      transform: translateY(0); 
+    }
+  }
+
+.nodisplay {
+    display: none;
+}
+
+/* :3 ~Menu Buttons~ :3 */
+
+.sidemenu-buttons {
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.sidemenu-buttons a {
+    color: white; 
+    padding: 15px;
+    display: block; 
+    text-align: center; 
+    text-decoration: none; 
+}
+
+/* :3 ~Page Links~ :3 */
+
+.links {
+    text-align: center;
+    margin-top: 17em;
+    color: white;
+    font-size: 15px;
+}
+
+.links a {
+    color: white;
+}
+
+.links a:hover {
+    opacity: 0.6;
+}
+
+/* :3 ~Page Text~ :3 */
+
+.title {
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 20vw;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(255, 53, 130);
+    height: 25vw;
+    margin-top: 25vw;
+    flex-direction: row;
+    padding: 0;
+    gap: 0;
+}
+
+.page p,
+.page a {
+    white-space: nowrap;
+    margin-left: 3vw;
+    margin-top: 1vw;
+    margin-right: 0;
+    padding: 0;
+    color: white;
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+.page img {
+    width: 24vw; 
+    height: auto;
+    margin-left: auto;
+}
+

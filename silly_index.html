@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>You got sillied</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: black;
+            background-image: url(../Images/cat.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #img {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            margin-top: 30vw;
+        }
+        #imgbox {
+            position: relative;
+            width: 100%;
+            height: 200px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="../JS/scriptsheet.js"></script>
+</head>
+<body>
+    <div id="imgbox">
+        <img id="img" onclick=pop() src="../Images/yougotsillied.png">
+    </div>
+</body>
+</html>
