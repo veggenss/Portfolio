@@ -15,6 +15,18 @@ function pop() {
     console.log('Completed pop')
 }
 
+function pop2() {
+    console.log('Executing pop')
+    confetti({
+        particleCount: 500,
+        spread: 180,
+        origin: { y: 0.6 },
+        scalar: 1.5,
+        gravity: 0.3,
+        colors: ['#FF3582', '#FF69B4', '#FFC5E2']
+        })
+}
+
 window.onload = function() {
     console.log('Executing pop')
     pop();
@@ -36,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navbutton.addEventListener('mouseenter', () => {
         console.log('Executing navbutton hover')
         clearTimeout(timeout);
+        
         navbutton.classList.add('rotate');  
         sidenav.classList.remove('nodisplay');
         console.log('Completed navbutton hover')
@@ -43,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     navbutton.addEventListener('mouseleave', () => {
         console.log('Executing navbutton no hover')
+        
         timeout = setTimeout(() => {
         navbutton.classList.remove('rotate'); 
         sidenav.classList.add('nodisplay');
@@ -53,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     sidenav.addEventListener('mouseenter', () => {
         console.log('Executing nav hover')
         clearTimeout(timeout);
+        
         sidenav.classList.remove('nodisplay');
         navbutton.classList.add('rotate');
         console.log('Completed nav hover')
@@ -61,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     sidenav.addEventListener('mouseleave', () => {
         console.log('Executing nav no hover')
         timeout = setTimeout(() => {
+            
         sidenav.classList.add('nodisplay');
         navbutton.classList.remove('rotate');
         console.log('Completed nav no hover')
@@ -72,6 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setbutton.addEventListener('mouseenter', () => {
         console.log('Executing setbutton hover')
         clearTimeout(timeout);
+        
         setbutton.classList.add('rotate');  
         sideset.classList.remove('nodisplay');
         console.log('Completed setbutton hover')
@@ -80,6 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setbutton.addEventListener('mouseleave', () => {
         console.log('Executing setbutton no hover')
         timeout = setTimeout(() => {
+        
         setbutton.classList.remove('rotate'); 
         sideset.classList.add('nodisplay');
         console.log('Completed setbutton no hover')
@@ -89,6 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
     sideset.addEventListener('mouseenter', () => {
         console.log('Executing set hover')
         clearTimeout(timeout);
+        
         sideset.classList.remove('nodisplay');
         setbutton.classList.add('rotate');
         console.log('Completed set hover')
@@ -97,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
     sideset.addEventListener('mouseleave', () => {
         console.log('Executing set no hover')
         timeout = setTimeout(() => {
+        
         sideset.classList.add('nodisplay');
         setbutton.classList.remove('rotate');
         console.log('Completed set no hover')
