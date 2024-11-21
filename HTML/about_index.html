@@ -6,15 +6,21 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="../CSS/stylesheet_index.css">
     <script src="../JS/scriptsheet.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <header>
 
         <!-- Title -->
-        <div class="topbar">
+        <div id="topbar">
             <a href="../index.html">unicfoxx's Portfolio</a>
+        </div>
+
+        <!-- Page Navigation -->
+        <div id="topbar-pagenav">
+            <a href="#section1">General info</a> |
+            <a href="#section2">My cat</a> |
+            <a href="#section3">My hobby</a> |
+            <a href="#section4">My career</a>
         </div>
         
         <!-- Side Navigation -->
@@ -22,10 +28,11 @@
         
         <div id="sidenav" class="nodisplay">
             <div class="sidemenu-buttons">
-                <a href="websites_index.html">My External Websites</a>
+                <a href="websites_index.html">My Websites</a>
                 <a href="about_index.html">Silly Things About Me</a>
                 <a href="things_i_made_index.html">Silly Things I Made</a>
-                <a href="silly_index.html">Hey Click This!</a>
+                <a href="silly_index.html" title="silly easter egg">Hey Click This!</a>
+                <a href="log_index.html">Website Log</a>
             </div>
             <!-- Social Links-->
             <div class="social-links">
@@ -50,9 +57,9 @@
         <!-- Text Pages -->
 
         <!-- Section 1 -->
-        <div class="title section1">Silly Things About Me</div>
+        <div class="title" id="section1">Silly Things About Me</div>
 
-        <div class="page section1">
+        <div class="page-style1" id="section1">
             <p>
                 <a target="_blank" href="https://youtu.be/sNPnbI1arSE?si=FVbW1swefb_H18JK&t=9" title="youtube music video">Hi, my name is</a> 
                 unicfoxx, I come from Norway, Bergen. 
@@ -62,14 +69,14 @@
                 I'm also studying media, though I’m largely self-taught in areas like Adobe tools, camera operation, and similar skills. 
                 &#40;I'm not using my real name for privacy reasons&#41;
             </p>
-            <img class="imagetype1" src="../Images/cat1.png" alt="cat image">
+            <img src="../Images/cat1.png" alt="cat image">
         </div>
 
         <!-- Section 2 -->
-        <div class="title section2">My silly cat</div>
+        <div class="title" id="section2">My silly cat</div>
         
-        <div class="page section2">
-            <img class="imagetype2" src="../Images/cat2.png" alt="cat image 2">
+        <div class="page-style1" id="section2">
+            <img src="../Images/cat2.png" alt="cat image 2">
             <p>My cat is very cute; she's about 1 year old, I think (I'm not keeping track, hehe), and she's also of the Siberian breed.
                 The reason we got such an expensive breed is partly because of how pretty it is, but also because my stepdad is allergic to "regular" cats.
                 My cat sleeps with me almost every night and loves me very much.
@@ -78,9 +85,9 @@
         </div>
 
         <!-- Section 3 -->
-        <div class="title section3">My love for music</div>
+        <div class="title" id="section3">My love for music</div>
 
-        <div class="page section3">
+        <div class="page-style1" id="section3">
             <p>I love music very much; I both listen to it and play it.
                 I first started enjoying music in 5th grade of elementary school.
                 I was chosen to play the drums, and I quickly fell in love with it.
@@ -91,14 +98,14 @@
                 <a target="_blank" href="https://open.spotify.com/playlist/3z7r2ljyWHDUadbls7Tong?si=8d7f3f5fee65407f" title="spotify playlist">This is a link to my rock playlist.</a>
                 
             </p>
-            <img class="imagetype1" src="../Images/concert.png" alt="concert image">
+            <img src="../Images/concert.png" alt="concert image">
         </div>
 
         <!-- Section 4 -->
-        <div class="title section4">My love for IT and Media</div>
+        <div class="title" id="section4">My love for IT and Media</div>
 
-        <div class="page section4">
-            <img class="imagetype2" src="../Images/pc.png" alt="pc image">
+        <div class="page-style1" id="section4">
+            <img src="../Images/pc.png" alt="pc image">
             <p> IT and media &#40;IM&#41; is a big part of my life; it's my hobby and future career.
                 I think my interest in IM started with gaming. I became interested in game development and started trying to code in middle school.
                 In the second year of middle school, all my friends wanted to sign up for Media because they heard it was really easy, so of course, I signed up as well.
