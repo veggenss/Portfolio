@@ -34,38 +34,11 @@ function grandmaToggle() {
 
 // Dropdown Menu Animation
 document.addEventListener('DOMContentLoaded', () => {
-    const topbar = document.getElementById('topbar');
-    const pagenav = document.getElementById('topbar-pagenav');
     const navbutton = document.getElementById('nav-button');
     const setbutton = document.getElementById('set-button');
     const sidenav = document.getElementById('sidenav');
     const sideset = document.getElementById('sideset');
     let timeout;
-    let timeout2;
-
-    // Page Navigation Drop Down - Hover On Topbar
-    topbar.addEventListener('mouseenter', () => {
-        clearTimeout(timeout2);
-        pagenav.classList.remove('nodisplay2');
-    });
-
-    topbar.addEventListener('mouseleave', () => {
-        timeout2 = setTimeout(() => {
-            pagenav.classList.add('nodisplay2');
-        }, 200);
-    });
-
-    // Page Navigation Drop Down - Hover On Pagenav
-    pagenav.addEventListener('mouseenter', () => {
-        clearTimeout(timeout2);
-        pagenav.classList.remove('nodisplay2');
-    });
-
-    pagenav.addEventListener('mouseleave', () => {
-        timeout2 = setTimeout(() => {
-            pagenav.classList.add('nodisplay2');
-        }, 200);
-    });
 
     // Side Navigation Button
     navbutton.addEventListener('mouseenter', () => {
