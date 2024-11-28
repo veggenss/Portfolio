@@ -8,6 +8,7 @@ body {
     width: 100%;
     margin: 0;
     height: auto;
+    color: white;
 }
 
 /* :3 ~Light Mode~ :3 */
@@ -50,15 +51,20 @@ body {
 html {
     height: 100%;
     width: 100%;
-    animation: fadeinsite 1.5s forwards;
+    animation: fadeinsite 1.5s;
+    transition: 1s ease-out;
 }
 
 @keyframes fadeinsite {
     0% {
-        opacity: 0;
+      opacity: 0;
+      filter: brightness(3) saturate(3);
+      transform: scale(0.99, 0.99);
     }
     100% {
-        opacity: 1;
+      opacity: 1;
+      filter: brightness(1) saturate(1);
+      transform: scale(1, 1);
     }
 }
 
@@ -255,6 +261,40 @@ html {
     cursor: pointer;
 }
 
+/* :3 ~Footer~ :3 */
+
+#footer {
+    width: 100%;
+    height: 15em;
+    background: linear-gradient(to bottom, rgb(255, 197, 226) 30%, rgb(255, 105, 180) 60%, rgb(255, 53, 130) 100%);
+    bottom: 0;
+    position: fixed;
+    margin-top: 10em;
+}
+
+#footer li {
+    color: black;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+    text-align: right;
+}
+
+#footer small {
+    margin-right: 10%;
+    color: black;
+}
+
+hr {
+    width: 80%;
+    border: 1.5px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    opacity: 0.8;
+    margin: 0 auto;
+}
 
 /* :3 ~Page Links~ :3 */
 
