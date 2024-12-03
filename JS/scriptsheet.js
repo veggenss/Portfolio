@@ -27,9 +27,11 @@ function lightmodeToggle() {
 }
 
 // Grandma Mode
+let grandma = false;
 function grandmaToggle() {
     var element = document.body;
     element.classList.toggle("grandma");
+    grandma = !grandma;
 }
 
 // Dropdown Menu Animation
@@ -48,10 +50,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     navbutton.addEventListener('mouseleave', () => {
-        timeout = setTimeout(() => {
-            navbutton.classList.remove('rotate');
-            sidenav.classList.add('nodisplay');
-        }, 200);
+        if (grandma == false) {
+            timeout = setTimeout(() => {
+                navbutton.classList.remove('rotate');
+                sidenav.classList.add('nodisplay');
+            }, 200);
+        } else if (grandma == true) {
+            timeout = setTimeout(() => {
+                navbutton.classList.remove('rotate');
+                sidenav.classList.add('nodisplay');
+            }, 1000);
+        }
     });
 
     // Side Navigation Menu
@@ -62,10 +71,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     sidenav.addEventListener('mouseleave', () => {
-        timeout = setTimeout(() => {
-            sidenav.classList.add('nodisplay');
-            navbutton.classList.remove('rotate');
-        }, 200);
+        if (grandma == false) {
+            timeout = setTimeout(() => {
+                sidenav.classList.add('nodisplay');
+                navbutton.classList.remove('rotate');
+            }, 200);
+        } else if (grandma == true) {
+            timeout = setTimeout(() => {
+                sidenav.classList.add('nodisplay');
+                navbutton.classList.remove('rotate');
+            }, 1000);
+        }
     });
 
     // Side Settings Button
@@ -76,6 +92,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     setbutton.addEventListener('mouseleave', () => {
+        if (grandma == false) {
+            timeout = setTimeout(() => {
+                setbutton.classList.remove('rotate');
+                sideset.classList.add('nodisplay');
+            }, 200);
+        } else if (grandma == true) {
+            timeout = setTimeout(() => {
+                setbutton.classList.remove('rotate');
+                sideset.classList.add('nodisplay');
+            }, 1000);
+        }
         timeout = setTimeout(() => {
             setbutton.classList.remove('rotate');
             sideset.classList.add('nodisplay');
@@ -90,10 +117,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     sideset.addEventListener('mouseleave', () => {
-        timeout = setTimeout(() => {
-            sideset.classList.add('nodisplay');
-            setbutton.classList.remove('rotate');
-        }, 200);
+        if (grandma == false) {
+            timeout = setTimeout(() => {
+                sideset.classList.add('nodisplay');
+                setbutton.classList.remove('rotate');
+            }, 200);
+        } else if (grandma == true) {
+            timeout = setTimeout(() => {
+                sideset.classList.add('nodisplay');
+                setbutton.classList.remove('rotate');
+            }, 1000);
+        }
     });
 });
 
