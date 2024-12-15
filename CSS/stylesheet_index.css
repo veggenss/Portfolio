@@ -159,6 +159,13 @@ a:hover {
     font-weight: bold;
 }
 
+#topbar-pagenav a:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+
+
 @keyframes slidein-pagenav {
     0% {
       top: -10%; 

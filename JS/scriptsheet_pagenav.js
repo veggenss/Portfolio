@@ -40,10 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const setbutton = document.getElementById('set-button');
     const sidenav = document.getElementById('sidenav');
     const sideset = document.getElementById('sideset');
+    const pagenav = document.getElementById('topbar-pagenav');
     let timeout;
 
     // Side Navigation Button
     navbutton.addEventListener('mouseenter', () => {
+        pagenav.classList.add('nodisplay2');
         clearTimeout(timeout);
         navbutton.classList.add('rotate');
         sidenav.classList.remove('nodisplay');
@@ -66,6 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Side Navigation Menu
     sidenav.addEventListener('mouseenter', () => {
+        pagenav.classList.add('nodisplay2');
         clearTimeout(timeout);
         sidenav.classList.remove('nodisplay');
         navbutton.classList.add('rotate');
@@ -87,6 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Side Settings Button
     setbutton.addEventListener('mouseenter', () => {
+        pagenav.classList.add('nodisplay2');
         clearTimeout(timeout);
         setbutton.classList.add('rotate');
         sideset.classList.remove('nodisplay');
@@ -108,6 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Side Settings Menu
     sideset.addEventListener('mouseenter', () => {
+        pagenav.classList.add('nodisplay2');
         clearTimeout(timeout);
         sideset.classList.remove('nodisplay');
         setbutton.classList.add('rotate');
@@ -129,5 +134,32 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const topbar = document.getElementById('topbar');
+    const pagenav = document.getElementById('topbar-pagenav');
+    let timeout2;
+
+    topbar.addEventListener('mouseenter', () => {
+        clearTimeout(timeout2); 
+        pagenav.classList.remove('nodisplay2'); 
+    });
+
+    topbar.addEventListener('mouseleave', () => {
+        timeout2 = setTimeout(() => {
+            pagenav.classList.add('nodisplay2');
+        }, 200);
+    });
+
+    pagenav.addEventListener('mouseenter', () => {
+        clearTimeout(timeout2); 
+        pagenav.classList.remove('nodisplay2'); 
+    });
+
+    pagenav.addEventListener('mouseleave', () => {
+        timeout2 = setTimeout(() => {
+            pagenav.classList.add('nodisplay2');
+        }, 200);
+    });
+});
 
 console.log('Completed scriptsheet');
