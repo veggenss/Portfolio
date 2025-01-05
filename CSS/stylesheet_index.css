@@ -1,65 +1,68 @@
-/* :3 ~Main~ :3 */
+/* 
+:3 ~Main~ :3
+General classes that don't need a specific category
+*/
 
 body {
     background-color: rgb(0, 0, 0);
+    scroll-behavior: smooth;
     font-family: monospace;
     overflow-x: hidden;
-    scrollbar-width: 0;
-    width: 100%;
-    margin: 0;
-    height: auto;
     color: white;
-}
-
-/* :3 ~Light Mode~ :3 */
-
-.light-mode *,
-.light-mode {
-    background-color: white !important; 
-    color: black !important;
-}
-
-.light-mode .topbar-pagenav,
-.light-mode .topbar,
-.light-mode .page, 
-.light-mode .sidenav,
-.light-mode .sideset{
-    background-color: rgb(255, 197, 226) !important;
-}
-
-/* :3 ~Grandma Mode~ :3 */
-
-.grandma * {
-    font-size: 1.2em !important;
-}
-
-.grandma #topbar a {
-    font-size: 3em !important;
-    line-height: 2;
-}
-
-.grandma .page {
-    height: 90vw !important;
-}
-
-.grandma .page-style1 img {
-    width: 50vw !important;
-}
-
-/* :3 ~Fade in site~ :3 */
-
-html {
-    height: 100%;
+    height: auto;
     width: 100%;
-    animation: fadeinsite 1s;
-    transition: 1s ease-out;
-    scroll-behavior: smooth;
+    scrollbar-width: 0;
+    margin: 0;
 }
 
 a:hover {
     opacity: 0.6;
     cursor: pointer;
     transition: 0.25s !important;
+}
+
+/* 
+:3 ~Light Mode~ :3 
+changes the background theme to white when a button is clicked
+*/
+
+.light-mode *{
+    color: black !important;
+    background-color: rgb(255, 255, 255) !important;
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(255, 255, 255) 60%) !important;
+}
+
+/* 
+:3 ~Grandma Mode~ :3 
+Changes the font size of all text when a button is clicked
+*/
+
+.grandma *,
+.grandma .title {
+    font-size: 1.2em !important;
+}
+
+.grandma #topbar a {
+    line-height: 3;
+}
+
+.grandma a:hover {
+    text-shadow: 2px 2px 0px orange, 
+    -2px -2px 0px orange,  
+    2px -2px 0px orange,
+    -2px 2px 0px orange !important;
+    opacity: 1 !important;
+    transform: scale(1.2) !important;
+}
+
+/*
+:3 ~Fade in site~ :3
+Gives the site a fade in when loaded
+*/
+
+html {
+    animation: fadeinsite 1s;
+    transition: 1s ease-out;
 }
 
 @keyframes fadeinsite {
@@ -73,18 +76,10 @@ a:hover {
     }
 }
 
-/* :3 ~Background~ :3 */
-
-#background-image {
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 100vw;
-    height: auto;
-    z-index: 1;
-}
-
-/* :3 ~Topbar~ :3 */
+/* 
+:3 ~Topbar~ :3 
+Displays the pink bar visable at the top of the website, used for title and menu buttons
+*/
 
 #topbar {
     height: 4em;
@@ -105,7 +100,10 @@ a:hover {
     line-height: 1.5em;
 }
 
-/* :3 ~Navigation/Setting Menus Hover Buttons~ :3 */
+/* 
+:3 ~Navigation/Setting Menus Hover Buttons~ :3 
+Displays two buttons at the left and right, menu animation is triggered on hover. A rotate animation also rotates the button 90 deg
+*/
 
 #nav-button {
     top: 1em;
@@ -133,7 +131,10 @@ a:hover {
     transform: rotate(90deg);
 }
 
-/* :3 ~Topbar Page Navigation~ :3 */
+/* 
+:3 ~Topbar Page Navigation~ :3 
+A navigator that makes it easy to navigate through shortcuts, added for my teacher who doesn't like scrolling
+*/
 
 #topbar-pagenav {
     justify-content: center;
@@ -179,7 +180,10 @@ a:hover {
 }
 
 
-/* :3 ~Side Menus~ :3 */
+/* 
+:3 ~Side Menus~ :3 
+A navigation menu and a settings menu that are displayed on the right and left, uses an animation to slide in from the top to bottom
+*/
 
 #sidenav{
     top: -100%;
@@ -212,7 +216,7 @@ a:hover {
 @keyframes slidein-menu {
     0% {
       top: -100%; 
-      transform: translateY(-10%); 
+      transform: translateY(-100%); 
     }
   
     100% {
@@ -229,7 +233,10 @@ a:hover {
     display: none !important;
 }
 
-/* :3 ~Side Menu Buttons~ :3 */
+/* 
+:3 ~Side Menu Buttons~ :3 
+Displays two buttons at the left and right that trigger the animation that opens the side menus
+*/
 
 .sidemenu-buttons {
     padding: 15px;
@@ -253,7 +260,10 @@ a:hover {
     opacity: 0.6;
 }
 
-/* :3 ~Social Links~ :3 */
+/* 
+:3 ~Social Links~ :3 
+Displays two buttons that are linked to socials, github and spotify
+*/
 
 .social-links{
     display: flex;
@@ -272,7 +282,10 @@ a:hover {
     cursor: pointer;
 }
 
-/* :3 ~Footer~ :3 */
+/* 
+:3 ~Footer~ :3 
+Displays a footer at the bottom of each page with links to other pages and information
+*/
 
 #footer {
     width: 100%;
@@ -313,7 +326,42 @@ hr {
     opacity: 0.8;
 }
 
-/* :3 ~Page Links~ :3 */
+/* 
+:3 ~Rock Paper Scissor~ :3 
+Displays the RPS game
+*/
+
+.choices button {
+    background-color: transparent;
+    border: none;
+}
+    
+.choices button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.backgroundDisplay {
+    background-color: purple;
+    width: 40em;
+    display: flex;
+    height: 2em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Scriptgi,
+#Playergi {
+    color: black;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin: 3em;
+}
+
+/* 
+:3 ~Page Links~ :3 
+Links, used on one page
+*/
 
 .links {
     text-align: center;
@@ -326,16 +374,42 @@ hr {
     color: white;
 }
 
-.links a:hover {
-    opacity: 0.6;
-}
-
-/* :3 ~Pages~ :3 */
+/* 
+:3 ~pages~ :3 
+Different styles for different pages and titles with different sections for page nav
+*/
 
 .title {
     color: white;
     font-size: 3vw;
     text-align: center;
+}
+
+#hi {
+    font-size: 10em;
+    position: fixed;
+    left: 45%;
+    top: 40%;
+    animation: fadehi 5s ease-out forwards ;
+}
+
+@keyframes fadehi {
+    0% {
+        transform: translateY(200%);
+        opacity: 0;
+    } 
+    10% {
+        transform: translateY(40%);
+        opacity: 1;
+    }
+    90% {
+        transform: translateY(40%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(200%);
+        opacity: 0;
+    }
 }
 
 /* :3 ~Sections~ :3 */

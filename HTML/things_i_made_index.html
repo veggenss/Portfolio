@@ -29,6 +29,7 @@
             <a href="#section1">Cpp Code</a>
             <a href="#section2">Js Code</a>
             <a href="#section3">Crow Song</a>
+            <a href="#section4">Rock Paper Scissors</a>
         </div>
 
         <!-- Side Navigation -->
@@ -500,6 +501,33 @@ for (let i = 1; i <= 10; i++) {
             </video>
             
         </div>
+        <div class="title" id="section4">Rock Paper Scissor</div>
+
+        <div class="page-style3" id="section4">
+            
+            <div class="choices"> 
+                <button onclick="startGame('rock')"><img src="../Images/Stone.png"></button>
+                <button onclick="startGame('paper')"><img src="../Images/Paper.png"></button>
+                <button onclick="startGame('scissor')"><img src="../Images/Scissor.png"></button>
+              </div>
+              
+              <div class="backgroundDisplay">
+                <div id="Playergi">Your choice: </div> 
+                <div id="Scriptgi">Bot's choice: </div> 
+              </div>
+              
+              <div class="scoreDisplay">Your Score:
+                <span id="playerScoreDisplay">0</span>
+              </div>
+              <div class="scoreDisplay">Bot's Score:
+                <span id="computerScoreDisplay">0</span>
+              </div>
+              
+              <div id="resultDisplay"></div>
+            </div>
+        </div>
+
     </main>
+    <script src="../JS/RPS.js" defer></script>
 </body>
 </html>

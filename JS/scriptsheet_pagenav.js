@@ -20,20 +20,6 @@ window.onload = function () {
     console.log('Completed pop');
 };
 
-// Light Mode Toggle
-function lightmodeToggle() {
-    var element = document.body;
-    element.classList.toggle("light-mode");
-}
-
-// Grandma Mode
-let grandma = false;
-function grandmaToggle() {
-    var element = document.body;
-    element.classList.toggle("grandma");
-    grandma = !grandma;
-}
-
 // Dropdown Menu Animation
 document.addEventListener('DOMContentLoaded', () => {
     const navbutton = document.getElementById('nav-button');
