@@ -3,7 +3,7 @@
 General classes that don't need a specific category
 */
 
-body {
+body, html {
     background-color: rgb(0, 0, 0);
     scroll-behavior: smooth;
     font-family: monospace;
@@ -301,10 +301,11 @@ Displays a footer at the bottom of each page with links to other pages and infor
     font-weight: 500;
     margin-right: 10%;
     margin-bottom: 5px;
-    margin-top: 5px;
+    margin-top: 10px;
     bottom: 0;
     list-style: none;
     text-align: right;
+    padding-top: 10px;
 }
 
 #footer small {
@@ -365,7 +366,7 @@ Links, used on one page
 
 .links {
     text-align: center;
-    margin-top: 20em;
+    margin-top: 15em;
     color: white;
     font-size: 2em;
 }
