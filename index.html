@@ -5,46 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="CSS/stylesheet_index.css">
-    <script src="JS/scriptsheet.js"></script>
+    <script src="JS/Cookies.js"></script>
+    <script src="JS/Menus.js"></script>
 </head>
 <body>
     <header>
 
         <!-- Title -->
-        <div class="topbar">
+        <div id="topbar">
             <a href="index.html">unicfoxx's Portfolio</a>
         </div>
         
         <!-- Side Navigation -->
         <img id="nav-button" src="Images/menu_icon.png">
         
-        <div id="sidenav" class="nodisplay">
+        <aside id="sidenav" class="nodisplay">
             <div class="sidemenu-buttons">
-                <a href="HTML/websites_index.html">My External Websites</a>
+                <a href="HTML/websites_index.html">My Websites</a>
                 <a href="HTML/about_index.html">Silly Things About Me</a>
                 <a href="HTML/things_i_made_index.html">Silly Things I Made</a>
-                <a href="HTML/silly_index.html">Hey Click This!</a>
+                <a href="HTML/silly_index.html" title="silly easter egg">Hey Click This!</a>
+                <a href="HTML/log_index.html">Website Log</a>
             </div>
-        </div>
+
+            <!-- Social Links-->
+            <div class="social-links">
+            <a href="https://github.com/unicfoxx" title="https://github.com/unicfoxx" target="_blank"><img src="Images/github_icon.png"></a>
+            <a href="https://open.spotify.com/user/xwgca22n05kb3vcty45a87olr?si=c8ab77e03de443d4" title="https://open.spotify.com/user/xwgca22n05kb3vcty45a87olr?si=c8ab77e03de443d4" target="_blank"><img src="Images/spotify_icon.png"></a>
+            </div>
+        </aside>
         
         <!-- Side Settings -->
         <img id="set-button" src="Images/settings_icon.png">
         
-        <div id="sideset" class="nodisplay">
+        <aside id="sideset" class="nodisplay">
             <div class="sidemenu-buttons">
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
+                <p onclick=lightmodeToggle() title="Makes everything bright (made specifically for Isak Brun Henriksen)">Light Mode</p>
+                <p onclick=grandmamodeToggle() title="Makes everything bigger">Grandma Mode</p>
             </div>
-        </div>
+        </aside>
     
     </header>
     <main>
 
-        <!-- Background -->
-        <img id="background-image" src="Images/sillycat.png">
+        <div id="hi">hi.</div>
     
     </main>
+    <footer>
+
+    </footer>
+
 </body>
 </html>
+
