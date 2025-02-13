@@ -1,12 +1,15 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <title>No Assembly?</title>
+    <title>You got sillied</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .html, body {
-            background-image: url(../Images/watercooling.gif);
-
+        body {
+            background-color: black;
+            background-image: url(../Images/cat.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         #img {
             position: absolute;
@@ -20,13 +23,18 @@
             width: 100%;
             height: 200px;
         }
+        a:hover {
+            opacity: 0.6;
+            cursor: pointer;
+        }
     </style>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="../JS/scriptsheet.js"></script>
 </head>
 <body>
+    <a href="../index.html" title="Home"><img src="../Images/arrow_icon.png"></a>
     <div id="imgbox">
-        <img id="img" onclick=pop() src="../Images/icantmakeassemlyprograms.png">
+        <img id="img" onclick=pop() src="../Images/yougotsillied.png">
     </div>
 </body>
 </html>
