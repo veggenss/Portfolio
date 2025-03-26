@@ -13,6 +13,7 @@ body, html {
     width: 100%;
     scrollbar-width: 0;
     margin: 0;
+    user-select: none;
 }
 
 a:hover {
