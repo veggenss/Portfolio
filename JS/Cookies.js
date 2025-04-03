@@ -17,10 +17,10 @@ function lightmodeToggle() {
     var element = document.body;
     if (document.cookie.includes('light=true')) {
         document.coookie = "cookieName=; expires=Thu, 09 sep 2001 02:46:00 UTC; path=/;";
-        element.classList.toggle("light-mode");
+        element.classList.remove("light-mode");
+    } else {
+        element.classList.add("light-mode");
     }
-
-    element.classList.toggle("light-mode");
 }
 
 // Grandma Mode Toggle
@@ -29,9 +29,9 @@ function grandmamodeToggle() {
     var element = document.body;
     if (document.cookie.includes('grandma=true')) {
         document.coookie = "cookieName=; expires=Thu, 09 sep 2001 02:46:00 UTC; path=/;";
-        element.classList.toggle("grandma-mode");
+        element.classList.remove("grandma-mode");
+    } else {
+        element.classList.add("grandma-mode");
     }
-
-    element.classList.toggle("grandma-mode");
 }
 
