@@ -15,23 +15,27 @@ window.onload = function() {
 // Light Mode Toggle
 function lightmodeToggle() {
     var element = document.body;
+    
     if (document.cookie.includes('light=true')) {
-        document.coookie = "cookieName=; expires=Thu, 09 sep 2001 02:46:00 UTC; path=/;";
+        document.cookie = "light=true; expires=Thu, 09 sep 2001 02:46:00 GMT; path=/;";
         element.classList.remove("light-mode");
     } else {
+        document.cookie = "light=true; path=/;";
         element.classList.add("light-mode");
     }
 }
 
 // Grandma Mode Toggle
-// Grandma Mode Toggle
 function grandmamodeToggle() {
     var element = document.body;
+
     if (document.cookie.includes('grandma=true')) {
-        document.coookie = "grandma=true=; expires=Thu, 09 sep 2001 02:46:00 UTC; path=/;";
+        document.cookie = "grandma=true; expires=Thu, 09 Sep 2001 02:46:00 GMT; path=/;";
         element.classList.remove("grandma-mode");
     } else {
+        document.cookie = "grandma=true; path=/;";
         element.classList.add("grandma-mode");
     }
 }
+
 
