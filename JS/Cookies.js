@@ -23,7 +23,13 @@ function lightmodeToggle() {
 }
 
 // Grandma Mode Toggle
+// Grandma Mode Toggle
 function grandmamodeToggle() {
     var element = document.body;
-    element.classList.toggle("grandma");
+    if (document.cookie.includes('grandma=true')) {
+        document.coookie = "cookieName=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    }
+
+    element.classList.toggle("grandma-mode");
 }
+
