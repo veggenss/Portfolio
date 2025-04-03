@@ -16,7 +16,7 @@ window.onload = function() {
 function lightmodeToggle() {
     var element = document.body;
     if (document.cookie.includes('light=true')) {
-        document.coookie = "cookieName=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        document.coookie = "cookieName=; expires=Thu, 09 sep 2001 02:46:00 UTC; path=/;";
         element.classList.toggle("light-mode");
     }
 
@@ -28,7 +28,8 @@ function lightmodeToggle() {
 function grandmamodeToggle() {
     var element = document.body;
     if (document.cookie.includes('grandma=true')) {
-        document.coookie = "cookieName=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        document.coookie = "cookieName=; expires=Thu, 09 sep 2001 02:46:00 UTC; path=/;";
+        element.classList.toggle("grandma-mode");
     }
 
     element.classList.toggle("grandma-mode");
