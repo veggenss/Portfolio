@@ -17,6 +17,7 @@ function lightmodeToggle() {
     var element = document.body;
     if (document.cookie.includes('light=true')) {
         document.coookie = "cookieName=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        element.classList.toggle("light-mode");
     }
 
     element.classList.toggle("light-mode");
