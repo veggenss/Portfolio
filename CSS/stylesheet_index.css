@@ -16,6 +16,12 @@ body, html {
     user-select: none;
 }
 
+main {
+	min-height: 100vh;
+	padding-bottom: 100px; 
+	box-sizing: border-box;
+}
+
 a:hover {
     opacity: 0.6;
     cursor: pointer;
@@ -167,7 +173,6 @@ A navigator that makes it easy to navigate through shortcuts, added for my teach
 }
 
 
-
 @keyframes slidein-pagenav {
     0% {
       top: -10%; 
@@ -261,6 +266,25 @@ Displays two buttons at the left and right that trigger the animation that opens
     opacity: 0.6;
 }
 
+/*
+:3 ~Work In Progress~ :3 
+A cover for stuff that's not finished
+*/
+
+.wip{
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
 /* 
 :3 ~Social Links~ :3 
 Displays two buttons that are linked to socials, github and spotify
@@ -284,6 +308,171 @@ Displays two buttons that are linked to socials, github and spotify
 }
 
 /* 
+:3 ~Profile Page~ :3 
+The user profile where the name and email are displayed
+*/
+
+#profile-page {
+	display: none;
+	top: 4.5em;
+    right: 4em;
+    width: 25em;
+    height: 15em;
+    position: fixed;
+    z-index: 15;
+	border-radius: 5px;
+	background-color: white;
+}
+
+#profile-button {
+	top: 0.8em;
+    right: 4em;
+    width: 2.4em;
+    height: 2.4em;
+    position: fixed;
+    z-index: 16;
+    transition: transform 0.2s ease-out;
+    cursor: pointer;
+	background-color: black;
+	border-radius: 50px;
+}
+
+.login-button {
+	position: relative;
+	top: 11em;
+	left: 1em;
+	margin: 0.5em;
+	height: 2em;
+	width: 4em;
+	background-color: black;
+	color: white;
+	font-weight: 600;
+	padding: 0.5rem 1rem;
+	border: none;
+	border-radius: 0.75rem;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	text-decoration: none;
+}
+
+
+
+/* 
+:3 ~Login Page~ :3 
+The page where the user logs and signs in
+*/
+
+#centerer {
+	display: grid;
+	place-items: center;
+}
+
+form {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10vw;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: pink;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: white;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: white;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 12px; 
+    border-radius: 6px;
+    background-color: pink;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #ff66b2;
+}
+
+/* Profile page styles */
+#profilepage {
+    text-align: center;
+    background-color: #222;
+    padding: 30px;
+}
+
+#profilepage h2 {
+    font-size: 28px;
+}
+
+#profilepage a {
+    color: pink;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#profilepage a:hover {
+    text-decoration: underline;
+}
+
+#profilepage p {
+    font-size: 18px;
+}
+
+/* Profile page styles */
+#profilepage {
+    text-align: center;
+    background-color: #222;
+    padding: 30px;
+}
+
+#profilepage h2 {
+    font-size: 28px;
+}
+
+#profilepage a {
+    color: pink;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#profilepage a:hover {
+    text-decoration: underline;
+}
+
+#profilepage p {
+    font-size: 18px;
+}
+/* 
 :3 ~Footer~ :3 
 Displays a footer at the bottom of each page with links to other pages and information
 */
@@ -293,7 +482,7 @@ Displays a footer at the bottom of each page with links to other pages and infor
     height: 15em;
     background: linear-gradient(to bottom, rgb(255, 197, 226) 30%, rgb(255, 105, 180) 60%, rgb(255, 53, 130) 100%);
     bottom: 0;
-    margin-top: 10em;
+	
 }
 
 #footer li {
